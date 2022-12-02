@@ -1,0 +1,137 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    // box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+html {
+    @media screen {
+        min-width: 1440px;
+    }
+
+    font-family: 'Overpass',
+    sans-serif;
+
+    background-color:hsl(0, 0%, 0%);
+
+    body {
+        max-width: 1000px;
+        min-width: 500px;
+        display: flex;
+
+   
+        .component {
+            width: 30%;
+            height: 40%;
+            display: flex;
+            flex-direction: column;
+            margin: 50px auto;
+            background-color: hsl(216, 12%, 8%);
+            border-radius: 10%;
+            padding-right: 30px;
+            padding-left: 30px;
+            padding-bottom: 20px;
+            padding-top: 20px;
+
+            h1 {
+                color: hsl(0, 0%, 100%);
+                // margin-top: 15px;
+                margin-bottom: 15px;
+            }
+
+            p {
+                font-size: 15px;
+                color: hsl(217, 12%, 63%);
+            }
+
+            .star {
+                margin-bottom: 15px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 45px;
+                height: 45px;
+                border-radius: 50%;
+                background-color: hsl(213, 19%, 18%);
+
+                img {
+                    display: flex;
+                    width: 12px;
+                    height: 12px;
+
+                }
+            }
+
+            .ulbutton {
+                height: 150px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+
+                ul {
+                    justify-content: space-evenly;
+                    display: flex;
+
+                    li {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        width: 45px;
+                        height: 45px;
+                        border-radius: 50%;
+                        background-color: hsl(213, 19%, 18%);
+                        list-style-type: none;
+                        color: white;
+
+                    }
+
+
+                    li:hover {
+                        background-color: hsl(25, 97%, 53%);
+                        cursor: pointer;
+                    }
+                }
+
+                button {
+
+
+                    color: white;
+                    width: 300px;
+                    height: 40px;
+                    background-color: hsl(25, 97%, 53%);
+                    border-radius: 20px;
+                    font-size: 13px;
+                    border: none;
+                    text-transform: uppercase;
+                    letter-spacing: 0.25vw;
+                }
+
+                button:hover {
+                    cursor: pointer;
+                    color: hsl(25, 97%, 53%);
+                    background-color: white;
+                }
+            }
+        }
+    }
+
+    .thankyou {
+        visibility: hidden;
+
+        .thanks {
+            visibility: hidden;
+        }
+
+    }
+
+    @media screen and(max-width:700px) {
+        body {
+            max-width: 700px;
+            max-height: 300px;
+        }
+    }
+}
